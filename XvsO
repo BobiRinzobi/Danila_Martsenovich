@@ -1,0 +1,172 @@
+def XvsO(a1,a2,a3,b1,b2,b3,c1,c2,c3):
+    str1=[a1,b1,c1]
+    str2=[a2,b2,c2]
+    str3=[a3,b3,c3]
+    stlb1=[a1,a2,a3]
+    stlb2=[b1,b2,b3]
+    stlb3=[c1,c2,c3]
+    diag1=[a3,b2,c1]
+    diag2=[a1,b2,c3]
+    print(str1)
+    print(str2)
+    print(str3)
+    if a1==0:
+        diag2.remove(a1)
+        diag2.insert(0,"o")
+        stlb1.remove(a1)
+        stlb1.insert(0,"o")
+        str1.remove(a1)
+        str1.insert(0, "o")
+    else:
+        diag2.remove(a1)
+        diag2.insert(0, "x")
+        stlb1.remove(a1)
+        stlb1.insert(0, "x")
+        str1.remove(a1)
+        str1.insert(0, "x")
+    if a2==0:
+        stlb1.remove(a2)
+        stlb1.insert(1,"o")
+        str2.remove(a2)
+        str2.insert(0, "o")
+    else:
+        stlb1.remove(a2)
+        stlb1.insert(1, "x")
+        str2.remove(a2)
+        str2.insert(0, "x")
+    if a3==0:
+        stlb1.remove(a3)
+        stlb1.insert(2,"o")
+        diag1.remove(a3)
+        diag1.insert(0,"o")
+        str3.remove(a3)
+        str3.insert(0, "o")
+    else:
+        stlb1.remove(a3)
+        stlb1.insert(2, "x")
+        diag1.remove(a3)
+        diag1.insert(0, "x")
+        str3.remove(a3)
+        str3.insert(0, "x")
+    if b1==0:
+        stlb2.remove(b1)
+        stlb2.insert(0, "o")
+        str1.remove(b1)
+        str1.insert(1, "o")
+    else:
+        stlb2.remove(b1)
+        stlb2.insert(0, "x")
+        str1.remove(b1)
+        str1.insert(1, "x")
+    if b2==0:
+        diag2.remove(b2)
+        diag2.insert(1, "o")
+        diag1.remove(b2)
+        diag1.insert(1, "o")
+        stlb2.remove(b2)
+        stlb2.insert(1, "o")
+        str2.remove(b2)
+        str2.insert(1, "o")
+    else:
+        diag2.remove(b2)
+        diag2.insert(1, "x")
+        diag1.remove(b2)
+        diag1.insert(1, "x")
+        stlb2.remove(b2)
+        stlb2.insert(1, "x")
+        str2.remove(b2)
+        str2.insert(1, "x")
+    if b3==0:
+        stlb2.remove(b3)
+        stlb2.insert(2, "o")
+        str3.remove(b3)
+        str3.insert(1, "o")
+    else:
+        stlb2.remove(b3)
+        stlb2.insert(2, "x")
+        str3.remove(b3)
+        str3.insert(1, "x")
+    if c1==0:
+        diag1.remove(c1)
+        diag1.insert(2, "o")
+        stlb3.remove(c1)
+        stlb3.insert(0, "o")
+        str1.remove(c1)
+        str1.insert(2, "o")
+    else:
+        diag1.remove(c1)
+        diag1.insert(2, "x")
+        stlb3.remove(c1)
+        stlb3.insert(0, "x")
+        str1.remove(c1)
+        str1.insert(2, "x")
+    if c2==0:
+        stlb3.remove(c2)
+        stlb3.insert(1, "o")
+        str2.remove(c2)
+        str2.insert(2, "o")
+    else:
+        stlb3.remove(c2)
+        stlb3.insert(1, "x")
+        str2.remove(c2)
+        str2.insert(2, "x")
+    if c3==0:
+        diag2.remove(c3)
+        diag2.insert(2, "o")
+        stlb3.remove(c3)
+        stlb3.insert(2, "o")
+        str3.remove(c3)
+        str3.insert(2, "o")
+    else:
+        diag2.remove(c3)
+        diag2.insert(2, "x")
+        stlb3.remove(c3)
+        stlb3.insert(2, "x")
+        str3.remove(c3)
+        str3.insert(2, "x")
+    print(str1)
+    print(str2)
+    print(str3)
+    w1=str1
+    w2=str2
+    w3=str3
+    w4=stlb1
+    w5=stlb2
+    w6=stlb3
+    w7=diag1
+    w8=diag2
+    if w1 == ['x','x','x']:
+        print("победа крестиков")
+    if w1== ['o','o','o']:
+        print("победа ноликов")
+    if w2 == ['x','x','x']:
+        print("победа крестиков")
+    if w2== ['o','o','o']:
+        print("победа ноликов")
+    if w3 == ['x','x','x']:
+        print("победа крестиков")
+    if w3== ['o','o','o']:
+        print("победа ноликов")
+    if w4 == ['x','x','x']:
+        print("победа крестиков")
+    if w4== ['o','o','o']:
+        print("победа ноликов")
+    if w5 == ['x','x','x']:
+        print("победа крестиков")
+    if w5== ['o','o','o']:
+        print("победа ноликов")
+    if w6 == ['x','x','x']:
+        print("победа крестиков")
+    if w6== ['o','o','o']:
+        print("победа ноликов")
+    if w7 == ['x','x','x']:
+        print("победа крестиков")
+    if w7== ['o','o','o']:
+        print("победа ноликов")
+    if w8 == ['x','x','x']:
+        print("победа крестиков")
+    if w8== ['o','o','o']:
+        print("победа ноликов")
+    else:
+        print("ничья")
+XvsO(0,1,1,1,0,0,1,0,0)
